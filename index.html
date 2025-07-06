@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Valdir Developer</title>
+  <link rel="stylesheet" href="style.css"> <!-- Arquivo CSS separado -->
+</head>
+<body>
+  <h2>Valdir Developer - O código que voa alto como o colibri</h2>
+
+  <img src="colibri.jpg"
+       alt="Lugar bonito" height="1080px" width="900px"
+       style="cursor: pointer;"
+       onclick="window.location.href='https://youtu.be/ZMxbKk3SkB0?si=Psp36xSL2avKG9rM';">
+  <br>
+  <select id="meuSelect">
+    <option value="">--selecione--</option>
+    <option value="https://youtube.com/@programandocomvaldir?si=loClQbLCYeoxUZ_y">Programando com Valdir</option>
+    <option value="https://youtu.be/UXCc8jKA900?si=lAIEDM5iAizkNveI">Passeio de cavalo com a mana</option>
+    <option value="https://youtu.be/S_3RQ49PfT8?si=dBuh1lW4nDX5sFz6">Lá do fundo baú</option>
+    <option value="https://youtu.be/tQy5mv4UFPc?si=RMmnVL2A-g52QEMY">Fala Comigo (Genilson Lima e Divas Sales – Dueto)</option>
+  </select>
+  <br>
+
+  <button onclick="irParalink()">Clique Aqui!</button>
+
+  <script>
+    function irParalink() {
+      var select = document.getElementById("meuSelect");
+      var link = select.value;
+      if (link) {
+        window.location.href = link;
+      } else {
+        alert("Por favor, selecione uma opção!");
+      }
+    }
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
