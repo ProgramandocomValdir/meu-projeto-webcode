@@ -29,6 +29,6 @@ button {
 img {
   border: 3px solid red;
   display: block;
-
+  margin: 0 auto;
   
 }
